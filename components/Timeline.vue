@@ -28,7 +28,7 @@
       </v-timeline-item>
     </v-timeline>
     <div class="mt-5 d-flex justify-center">
-      <v-btn @click="rerouteLinkedin" color="blue" dark>
+      <v-btn color="blue" dark @click="rerouteLinkedin">
         <span>More about me on Linked</span>
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>

@@ -1,10 +1,26 @@
 <template>
   <div>
-    <v-row>
-      <v-col cols="12" sm="5" md="3">
-        <bar-chart-component />
+    <!-- <div class="spacer"></div> -->
+    <v-row class="mb-16">
+      <v-col cols="12" md="4">
+        <top-project-2 />
       </v-col>
-      <v-col cols="12" sm="7" md="9">
+      <v-col cols="12" md="4">
+        <top-project-1 />
+      </v-col>
+      <v-col cols="12" md="4">
+        <top-project-2 />
+      </v-col>
+    </v-row>
+
+    <v-divider class="ma-16"></v-divider>
+
+    <v-row>
+      <v-col cols="12" sm="5">
+        <!-- <bar-chart-component /> -->
+        <bubble-chart-component />
+      </v-col>
+      <v-col cols="12" sm="7">
         <div>
           <h2>Lorem ipsum</h2>
           <p>
@@ -18,18 +34,21 @@
         </div>
       </v-col>
     </v-row>
+    <v-divider class="ma-16"></v-divider>
 
-    <Timeline /> 
+    <Timeline />
   </div>
 </template>
 
 <script>
-import BarChartComponent from '~/components/BarChartComponent.vue'
+
 export default {
-  components: { BarChartComponent },
 
 }
 </script>
-
-<style>
+<style scoped>
+.spacer {
+  height: 100px;
+  width: 100%;
+}
 </style>
