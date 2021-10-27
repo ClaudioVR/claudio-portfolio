@@ -18,6 +18,8 @@
         </div>
       </v-col>
     </v-row>
+
+    <Timeline /> 
   </div>
 </template>
 
