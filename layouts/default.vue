@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar flat :clipped-left="clipped" fixed app>
+    <v-app-bar hide-on-scroll flat :clipped-left="clipped" fixed app>
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <NuxtLink to="#">portfolio</NuxtLink>

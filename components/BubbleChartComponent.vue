@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="chart">
-      <BubbleChart :data="datacollection" :options="options" />
+      <BubbleChart :data="datacollection" :options="options" :height="200" />
     </div>
   </section>
 </template>
@@ -16,7 +16,7 @@ export default {
         labels: ['Data'],
         datasets: [
           {
-            label: 'Data One',
+            label: 'Charts.js is an amazing tool',
             backgroundColor: 'rgba(33,150,243, 0.5)',
             pointBackgroundColor: 'white',
             borderWidth: 1,
@@ -76,7 +76,7 @@ export default {
           display: true
         },
         responsive: true,
-        maintainAspectRatio: false
+        maintainAspectRatio: true
       }
     }
   },

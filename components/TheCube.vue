@@ -3,14 +3,24 @@
     <div class="cube-container">
       <div class="scene">
         <div class="cube">
-          <div class="cube__face cube__face--front"><p>GraphQL</p></div>
-          <div id="vue" class="cube__face cube__face--back"><p>Vue.js</p></div>
-          <div class="cube__face cube__face--right"><p>HTML5</p></div>
-          <div id="vuetify" class="cube__face cube__face--left">
-            <p>Vuetify</p>
+          <div id="amplify" class="cube__face cube__face--front">
+            <!-- <p class="black--text">Amplify</p> -->
           </div>
-          <div class="cube__face cube__face--top"><p>CSS3</p></div>
-          <div class="cube__face cube__face--bottom"><p>JavaScript</p></div>
+          <div id="vue" class="cube__face cube__face--back">
+            <!-- <p class="">Vue.js</p> -->
+          </div>
+          <div id="react" class="cube__face cube__face--right">
+            <p>React next?</p>
+          </div>
+          <div id="vuetify" class="cube__face cube__face--left">
+            <!-- <p>Vuetify</p> -->
+          </div>
+          <div id="css" class="cube__face cube__face--top">
+            <!-- No text here -->
+          </div>
+          <div id="js" class="cube__face cube__face--bottom">
+            <!-- <p class="black--text">Html</p> -->
+          </div>
         </div>
       </div>
     </div>
@@ -52,14 +62,50 @@ export default {
 }
 
 .cube p {
-  color: white;
+  color: #7adcfa;
   font-family: sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  margin-top: 170px;
 }
 
 #vuetify {
-  background-image: url('/v.png');
+  background-image: url('/images/vuetify.png');
   background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#vue {
+  background-image: url('/images/vue_logo.svg');
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#amplify {
+  background-image: url('/images/amplify_logo.png');
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#js {
+  background-image: url('/images/javascript_logo.png');
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#css {
+  background-image: url('/images/html_css_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#react {
+  background-image: url('/images/react_logo.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -105,30 +151,38 @@ export default {
 }
 
 .cube__face--front {
-  background: #cd004d;
+  /* Amplify */
+  background: #edeaea;
   transform: rotateY(0deg) translateZ(100px);
 }
 .cube__face--back {
-  background: #0cb14b;
+  /* Vue.js */
+  /* background: #02ac40; */
+  background: #f1f1f1;
   transform: rotateY(180deg) translateZ(100px);
 }
 .cube__face--right {
-  background: #008ad2;
+  /* react */
+  /* background: #008ad2; */
+  background: #f1f1f1;
   transform: rotateY(90deg) translateZ(100px);
 }
 .cube__face--left {
-  /* background: #f37020; orange*/
-  background: #008ad2;
-
+  /* Vuetify */
+  /* background: #008ad2; */
+  background: #f1f1f1;
   transform: rotateY(-90deg) translateZ(100px);
 }
 .cube__face--top {
-  /* background: #6460ac; purples */
-  background: #f37020;
+  /* Three amigos */
+  /* background: #f37020; */
+  background: #f1f1f1;
   transform: rotateX(90deg) translateZ(100px);
 }
 .cube__face--bottom {
-  background: #fcb712;
+  /* AdobeXD */
+  /* background: #f066f4; */
+  background: #f1f1f1;
   transform: rotateX(-90deg) translateZ(100px);
 }
 

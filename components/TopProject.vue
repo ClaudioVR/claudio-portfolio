@@ -1,31 +1,30 @@
 <template>
   <div>
     <div class="computer-img">
-      <img class="agent" src="/images/agentos.png" alt="" />
-    </div>
-    <p class="mt-n12">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste omnis
-      temporibus reiciendis. Cupiditate, ab.
-    </p>
-    <div class="d-flex justify-center">
-      <v-btn color="blue" outlined>Read more</v-btn>
+      <img
+        class="agent"
+        :src="require(`../static/images/${imageName}`)"
+        alt=""
+      />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      projects: [
-
-      ]
-    }
-  },
+  namd: 'topProject',
+  props: {
+    imageName: {
+      type: String,
+      default: 'agentos.png'
+    },
+  }
 }
 </script>
 <style scoped>
 .computer-img {
+  margin-top: -40px;
+  margin-bottom: -35px;
   height: 300px;
   width: 100%;
   position: relative;
@@ -37,11 +36,12 @@ export default {
 }
 .agent {
   position: absolute;
-  top: 120px;
+  top: 92px;
   left: 50%;
   transform: translate(-50%);
   height: auto;
-  width: 100px;
+  width: 169.5px;
+  height: 105px;
 }
 </style>
 
