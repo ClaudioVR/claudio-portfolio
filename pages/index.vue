@@ -1,5 +1,10 @@
 <template>
   <div>
+    <v-row>
+      <v-col cols="12" md="6">
+        <TheCube />
+      </v-col>
+    </v-row>
     <!-- <div class="spacer"></div> -->
     <v-row class="mb-16">
       <v-col cols="12" md="4">
@@ -34,6 +39,7 @@
         </div>
       </v-col>
     </v-row>
+
     <v-divider class="ma-16"></v-divider>
 
     <Timeline />
