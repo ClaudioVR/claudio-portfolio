@@ -3,24 +3,12 @@
     <div class="cube-container">
       <div class="scene">
         <div class="cube">
-          <div id="amplify" class="cube__face cube__face--front">
-            <!-- <p class="black--text">Amplify</p> -->
-          </div>
-          <div id="vue" class="cube__face cube__face--back">
-            <!-- <p class="">Vue.js</p> -->
-          </div>
-          <div id="react" class="cube__face cube__face--right">
-            <p>React next?</p>
-          </div>
-          <div id="vuetify" class="cube__face cube__face--left">
-            <!-- <p>Vuetify</p> -->
-          </div>
-          <div id="css" class="cube__face cube__face--top">
-            <!-- No text here -->
-          </div>
-          <div id="js" class="cube__face cube__face--bottom">
-            <!-- <p class="black--text">Html</p> -->
-          </div>
+          <div id="amplify" class="cube__face cube__face--front"></div>
+          <div id="vue" class="cube__face cube__face--back"></div>
+          <div id="nuxt" class="cube__face cube__face--right"></div>
+          <div id="vuetify" class="cube__face cube__face--left"></div>
+          <div id="css" class="cube__face cube__face--top"></div>
+          <div id="js" class="cube__face cube__face--bottom"></div>
         </div>
       </div>
     </div>
@@ -74,7 +62,7 @@ export default {
 }
 
 #vue {
-  background-image: url('/images/vue_logo.svg');
+  background-image: url('/images/vue_logo.png');
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -101,9 +89,9 @@ export default {
   background-position: center center;
 }
 
-#react {
-  background-image: url('/images/react_logo.png');
-  background-size: contain;
+#nuxt {
+  background-image: url('/images/nuxt_logo.png');
+  background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: center center;
 }

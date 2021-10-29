@@ -8,7 +8,7 @@
         small
       >
         <template #opposite>
-          <span>{{ job.dates }}</span>
+          <span class="text-h6 font-weight-light">{{ job.dates }}</span>
         </template>
         <v-card class="elevation-2">
           <v-card-title class="text-h5">
@@ -27,7 +27,8 @@
         </v-card>
       </v-timeline-item>
     </v-timeline>
-    <div class="mt-5 d-flex justify-center">
+
+    <div class="mt-12 d-flex justify-center">
       <v-btn color="blue" dark @click="rerouteLinkedin">
         <span>More about me on Linked</span>
         <v-icon>mdi-linkedin</v-icon>
@@ -55,7 +56,8 @@ export default {
           dates: '5 Years',
           image: 'visitoslo'
         },
-      ]
+      ],
+
     }
   },
   methods: {
