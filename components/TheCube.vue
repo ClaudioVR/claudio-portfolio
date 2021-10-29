@@ -34,8 +34,6 @@ export default {
 </script>
 
 <style scoped>
-/* Rotating cube ----------------------- */
-
 .cube-container {
   width: 100%;
   height: 500px;
@@ -112,7 +110,7 @@ export default {
 
 @keyframes rotate {
   0% {
-    transform: rotate3d(0);
+    transform: rotate3d(0, 1, 1, 0deg);
   }
   20% {
     transform: rotate3d(1, 0, 0, 180deg);
@@ -136,7 +134,7 @@ export default {
     transform: rotateX(720deg);
   }
   100% {
-    transform: rotate3d(0);
+    transform: rotate3d(0, 1, 1, 0deg);
   }
 }
 
@@ -185,6 +183,4 @@ export default {
   background: #f1f1f1;
   transform: rotateX(-90deg) translateZ(100px);
 }
-
-/* /Rotating cube ----------------------- */
 </style>
