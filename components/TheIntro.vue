@@ -19,7 +19,7 @@
             <p class="my-0 text-h4">claudio rescigno</p>
             <p class="mt-3 mb-0 text-h6">front end developer</p>
             <p class="my-0">oslo, norway</p>
-            <div class="languages d-flex justify-start mt-5">
+            <div class="languages d-flex justify-center justify-sm-start mt-5">
               <div v-for="lang in languages" :key="lang" class="">
                 <v-avatar size="30" color="red" class="mr-3">
                   <img

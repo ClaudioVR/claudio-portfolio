@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-timeline>
+    <v-timeline :dense="ifDevice" class="ml-n5 ml-sm-0">
       <v-timeline-item
         v-for="(job, i) in jobs"
         :key="i"
@@ -17,11 +17,11 @@
             <v-img
               contain
               max-height="auto"
-              max-width="100"
+              max-width="80"
               :src="require(`../static/images/${job.image}.png`)"
             ></v-img>
           </v-card-title>
-          <v-card-text class="mt-n3">
+          <v-card-text class="mt-n1">
             <p class="mb-0">{{ job.description }}</p>
           </v-card-text>
         </v-card>
@@ -52,12 +52,18 @@ export default {
         {
           company: 'VisitOSLO',
           position: 'Project Leader Int. Media',
-          description: 'Managing international media visits and projects in Oslo. Other roles I covered at VisitOSLO include Front Office Manager and Information Consultant.',
+          description: 'Managing international media visits and projects in Oslo. I also worked as a Front Office Manager and Information Consultant during my time there.',
           dates: '5 Years',
           image: 'visitoslo'
         },
       ],
 
+    }
+  },
+  computed: {
+    ifDevice() {
+      if (this.$vuetify.breakpoint.smAndDown) return true
+      return false
     }
   },
   methods: {

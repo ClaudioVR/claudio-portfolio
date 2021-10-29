@@ -1,7 +1,12 @@
 <template>
   <v-app dark>
     <v-app-bar hide-on-scroll flat :clipped-left="clipped" fixed app>
-      <v-toolbar-title v-text="title" />
+      <NuxtLink to="/">
+        <v-toolbar-title>
+          <span class="ml-5">claudio rescigno</span>
+        </v-toolbar-title>
+      </NuxtLink>
+
       <v-spacer />
       <NuxtLink to="#">portfolio</NuxtLink>
       <NuxtLink to="#">cv</NuxtLink>
@@ -16,7 +21,7 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
+      <v-container class="px-10">
         <Nuxt />
       </v-container>
     </v-main>
@@ -60,7 +65,7 @@ export default {
   text-decoration: none;
   margin-right: 20px;
 }
-.v-application a.nuxt-link-exact-active {
+/* .v-application a.nuxt-link-exact-active {
   font-weight: 800;
-}
+} */
 </style>

@@ -2,7 +2,7 @@
   <div>
     <div class="wrapper">
       <div>
-        <p class="text-center text-h2 mb-12">Curriculum vitae</p>
+        <p class="text-center text-h2 mb-12">curriculum vitae</p>
         <Timeline />
       </div>
     </div>
@@ -21,5 +21,12 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin-top: 0px;
+  }
 }
 </style>

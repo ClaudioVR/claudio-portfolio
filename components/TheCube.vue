@@ -28,6 +28,7 @@ export default {
   /* height: 70vh; */
   display: flex;
   align-items: center;
+  margin-top: -100px;
 }
 
 .scene {
@@ -170,5 +171,11 @@ export default {
   /* background: #f066f4; */
   background: #f1f1f1;
   transform: rotateX(-90deg) translateZ(100px);
+}
+
+@media only screen and (min-width: 1024px) {
+  .cube-container {
+    margin-top: 0px;
+  }
 }
 </style>
