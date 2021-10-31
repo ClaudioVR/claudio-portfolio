@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="wrapper d-flex align-center justify-center">
-      <div>
+      <div v-if="showContent">
         <div class="d-sm-flex align-center">
           <v-avatar size="250">
             <img src="/images/claudio-img.jpg" alt="John" />
@@ -37,6 +37,13 @@
           </v-btn>
         </div>
       </div>
+      <div v-else class="text-center">
+        <v-progress-circular
+          :size="50"
+          color="primary"
+          indeterminate
+        ></v-progress-circular>
+      </div>
     </div>
   </div>
 </template>
@@ -45,6 +52,7 @@
 export default {
   data() {
     return {
+      showContent: false,
       languages: [
         "gb",
         "it",
@@ -53,6 +61,9 @@ export default {
         "fr"
       ]
     }
+  },
+  mounted() {
+    this.showContent = true
   },
 }
 </script>
