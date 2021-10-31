@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="wrapper">
-      <div class="px-10 px-md-0">
-        <p class="text-center text-h2 mb-12">portfolio</p>
+      <div>
+        <p class="text-center text-h2 mb-12 grey--text text--lighten-2">
+          portfolio
+        </p>
 
         <v-row>
           <v-col
@@ -87,5 +89,10 @@ export default {
   display: flex;
   align-items: center;
   margin-top: 300px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin-top: 0px;
+  }
 }
 </style>

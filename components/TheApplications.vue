@@ -2,7 +2,9 @@
   <div>
     <div class="wrapper">
       <div>
-        <p class="text-center text-h2 mb-12">the applications</p>
+        <p class="text-center text-h2 mb-12 grey--text text--lighten-2">
+          the applications
+        </p>
         <v-row>
           <v-col cols="12" sm="8" offset-sm="2" md="5" offset-md="0">
             <bubble-chart-component />

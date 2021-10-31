@@ -2,7 +2,17 @@
   <div>
     <div class="wrapper">
       <div>
-        <p class="text-center text-h2 mb-12">curriculum vitae</p>
+        <p
+          class="
+            text-center text-h2
+            mb-12
+            grey--text
+            text--lighten-2
+            font-weight-light
+          "
+        >
+          curriculum vitae
+        </p>
         <Timeline />
       </div>
     </div>

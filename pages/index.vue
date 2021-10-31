@@ -2,6 +2,8 @@
   <div>
     <TheIntro />
 
+    <LazyAboutMe />
+
     <TheTech />
 
     <ThePortfolio />

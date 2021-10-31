@@ -2,7 +2,9 @@
   <div>
     <div class="wrapper">
       <div>
-        <p class="text-center text-h2 mb-md-n16">the tech</p>
+        <p class="text-center text-h2 mb-md-n16 grey--text text--lighten-2">
+          the tech
+        </p>
         <v-row>
           <v-col class="d-flex align-center" cols="12" md="6">
             <div>
