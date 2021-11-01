@@ -8,7 +8,7 @@
 
     <ThePortfolio />
 
-    <TheApplications />
+    <!-- <TheApplications /> -->
 
     <MyCv />
   </div>

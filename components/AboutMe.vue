@@ -6,27 +6,7 @@
           about me
         </p>
         <v-row>
-          <v-col cols="12" sm="12" md="6">
-            <p>
-              I work as a front-end developer at
-              <a
-                href="https://www.linkedin.com/company/agentos-com"
-                target="_blank"
-                >AgentOS</a
-              >
-              designing and creating applications for the british real estate
-              industry.
-            </p>
-            <p>
-              My background is in humanities, with more than 10 years spent
-              working in teaching, recruitment and tourism marketing.
-            </p>
-            <p>
-              After a stint in computer science at university, I veered back
-              into front-end development in 2018 and haven't looked back since.
-            </p>
-          </v-col>
-          <v-col cols="12" sm="12" md="6" class="pt-0">
+          <v-col cols="12" sm="6" offset-sm="3" class="d-flex justify-center">
             <MyIdCard />
           </v-col>
         </v-row>

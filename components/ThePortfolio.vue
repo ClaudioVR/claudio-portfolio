@@ -88,7 +88,7 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 550px;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {

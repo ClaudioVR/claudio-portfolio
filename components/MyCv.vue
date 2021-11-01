@@ -31,12 +31,12 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 300px;
   margin-bottom: 200px;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 }
 </style>

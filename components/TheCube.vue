@@ -3,12 +3,18 @@
     <div class="cube-container">
       <div class="scene">
         <div class="cube">
-          <div id="amplify" class="cube__face cube__face--front"></div>
-          <div id="vue" class="cube__face cube__face--back"></div>
-          <div id="nuxt" class="cube__face cube__face--right"></div>
-          <div id="vuetify" class="cube__face cube__face--left"></div>
-          <div id="css" class="cube__face cube__face--top"></div>
-          <div id="js" class="cube__face cube__face--bottom"></div>
+          <div id="amplify" class="cube__face cube__face--front">
+            <p>UI/UX</p>
+          </div>
+          <div id="vue" class="cube__face cube__face--back">
+            <p>Wireframe</p>
+          </div>
+          <div id="nuxt" class="cube__face cube__face--right"><p>Build</p></div>
+          <div id="vuetify" class="cube__face cube__face--left">
+            <p>Test</p>
+          </div>
+          <div id="css" class="cube__face cube__face--top"><p>Release</p></div>
+          <div id="js" class="cube__face cube__face--bottom"><p>Repeat</p></div>
         </div>
       </div>
     </div>
@@ -51,11 +57,10 @@ export default {
 .cube p {
   color: #7adcfa;
   font-family: sans-serif;
-  font-size: 1.2rem;
-  margin-top: 170px;
+  font-size: 2rem;
 }
 
-#vuetify {
+/* #vuetify {
   background-image: url('/images/vuetify.png');
   background-size: 100px 100px;
   background-repeat: no-repeat;
@@ -95,7 +100,7 @@ export default {
   background-size: 100px 100px;
   background-repeat: no-repeat;
   background-position: center center;
-}
+} */
 
 @keyframes rotate {
   0% {

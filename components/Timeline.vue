@@ -30,7 +30,7 @@
 
     <div class="mt-12 d-flex justify-center">
       <v-btn color="blue" dark @click="rerouteLinkedin">
-        <span>More about me on Linked</span>
+        <span>find me on Linked</span>
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
     </div>

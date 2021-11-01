@@ -1,30 +1,62 @@
 <template>
   <div>
     <div class="card-wrapper">
-      <v-card outlined class="rounded-0">
-        <v-card-title primary-title>
-          <span class="text-h5">claudio rescigno</span>
+      <v-card outlined class="rounded-0" min-width="300" max-width="450">
+        <v-card-title class="blue pt-8 pb-12">
+          <v-spacer></v-spacer>
+          <div class="text-center white--text">
+            <p class="text-h4 my-0 font-weight-bold">claudio rescigno</p>
+            <p class="text-caption my-0">uk - italy - norway</p>
+          </div>
+          <v-spacer></v-spacer>
         </v-card-title>
-        <v-card-subtitle>front end developer</v-card-subtitle>
-        <v-card-text class="">
-          <p class="mb-1 mt-10 mt-sm-0 text-body-1">
-            <strong>Nationalities</strong>: UK / ITA / NOR
-          </p>
-          <p class="my-1 text-body-1"><strong>Framework</strong>: Vue.js</p>
-          <p class="my-1 text-body-1">
-            <strong>Design tools</strong>: Adobe XD
-          </p>
-          <p class="my-1 text-body-1">
-            <strong>Hobbies</strong>: Backgammon, Aikido, Reading
-          </p>
-          <p class="my-1 text-body-1"><strong>Favourite food</strong>: Pizza</p>
-          <v-card id="account-icon" outlined>
-            <v-icon color="grey lighten-3" size="150">mdi-account</v-icon>
-          </v-card>
-          <span class="d-none d-sm-block stamp stamp-ux absolute-stamp"
-            >UXQB Certified</span
+        <div class="d-flex justify-center">
+          <v-avatar size="80" class="mx-auto mt-n9">
+            <img src="/images/claudio-img.jpg" alt="Claudio" />
+          </v-avatar>
+          <div class="white-cirlce"></div>
+        </div>
+        <v-card-text class="pt-5">
+          <div class="text-center text-body-1">
+            <p>
+              I work at
+              <a
+                href="https://www.linkedin.com/company/agentos-com"
+                target="_blank"
+                >AgentOS</a
+              >
+              designing and creating applications for the british real estate
+              industry.
+            </p>
+            <p>
+              My background is in humanities, with more than 10 years spent
+              working in teaching, recruitment and tourism marketing.
+            </p>
+            <p>
+              After a stint in computer science at university, I veered back
+              into front-end development in 2018 and haven't looked back since.
+            </p>
+          </div>
+          <v-divider class="mb-3"></v-divider>
+          <v-chip-group
+            v-model="selectedChip"
+            active-class="blue accent-3 white--text"
+            column
           >
-          <span class="d-sm-none stamp sm-stamp-ux">UXQB Certified</span>
+            <v-chip @click="goTo('https://uxqb.org/en/')"
+              >#uxqbCertified</v-chip
+            >
+
+            <v-chip @click="goTo('https://www.adobe.com/products/xd.html')"
+              >#adobeXD</v-chip
+            >
+
+            <v-chip @click="goTo('https://v3.vuejs.org/')">#vue3</v-chip>
+
+            <v-chip @click="goTo('https://aws.amazon.com/amplify/')"
+              >#amplify</v-chip
+            >
+          </v-chip-group>
         </v-card-text>
       </v-card>
     </div>
@@ -33,14 +65,20 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      selectedChip: 0
+    }
+  },
+  methods: {
+    goTo(url) {
+      window.open(url, '_blank')
+    }
+  }
 }
 </script>
 
 <style scoped>
-.card-wrapper {
-  /* transform: rotate(5deg); */
-}
 #account-icon {
   position: absolute;
   top: 15px;
