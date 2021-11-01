@@ -3,6 +3,7 @@
     <div class="wrapper">
       <div>
         <p
+          data-aos="fade-down"
           class="
             text-center text-h2
             mb-12
@@ -13,7 +14,8 @@
         >
           curriculum vitae
         </p>
-        <Timeline />
+
+        <Timeline data-aos="fade-in" />
       </div>
     </div>
   </div>

@@ -2,58 +2,43 @@
   <div>
     <div class="wrapper">
       <div>
-        <p class="text-center text-h2 mb-md-n16 grey--text text--lighten-2">
-          the journey
+        <p
+          data-aos="fade-in"
+          class="text-center text-h2 mb-12 grey--text text--lighten-2"
+        >
+          the tech
         </p>
         <v-row>
           <v-col
-            class="d-flex align-center justify-space-around"
+            v-for="tech in techs"
+            :key="tech.name"
+            class="d-flex"
             cols="12"
-            md="8"
+            sm="4"
           >
-            <v-card flat width="30%" class="mt-1">
-              <div class="d-flex justify-center">
-                <v-avatar tile size="55">
-                  <img src="/images/adobexd_logo.svg" alt="adobexd" />
+            <v-card data-aos="fade-up" flat>
+              <v-card-title primary-title>
+                <v-spacer></v-spacer>
+
+                <v-avatar tile size="150">
+                  <img
+                    :src="require(`../static/images/${tech.image}`)"
+                    :alt="tech.name"
+                  />
                 </v-avatar>
-              </div>
-              <v-card-text>
-                <p class="text-center body-1 mt-2">
-                  i use <strong>adobeXD</strong> to create interactive
-                  wireframes. ui and ux design are at the base of it all.
-                </p>
-              </v-card-text>
-            </v-card>
-            <v-card flat width="30%">
-              <div class="d-flex justify-center pt-1">
-                <v-avatar tile size="60">
-                  <img src="/images/vue_logo.svg" alt="adobexs" />
-                </v-avatar>
-              </div>
-              <v-card-text>
-                <p class="text-center body-1">
-                  i build the app with <strong>Vue.js</strong> as an SPA with
-                  routing and state and deployt it as a PWA.
-                </p>
-              </v-card-text>
-            </v-card>
-            <v-card flat width="30%">
-              <div class="d-flex justify-center mt-n3">
-                <v-avatar size="100">
-                  <img src="/images/amplify_logo.png" alt="adobexs" />
-                </v-avatar>
-              </div>
-              <v-card-text>
-                <p class="mt-n5 text-center body-1">
-                  we leverage <strong>amplify</strong> to create DBs and lambda
-                  functions to run and host our apps.
+                <v-spacer></v-spacer>
+              </v-card-title>
+              <v-card-text class="text-center">
+                <p class="text-h6">
+                  {{ tech.description }}
                 </p>
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col class="" cols="12" md="4">
+
+          <!-- <v-col class="d-flex justify-center" cols="12" md="4">
             <TheCube />
-          </v-col>
+          </v-col> -->
         </v-row>
       </div>
     </div>
@@ -62,7 +47,15 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      techs: [
+        { name: 'adobeXD', description: 'UI and UX debates and design starts with the wireframing. They`re at the base of everything i do.s', image: 'adobexd_logo.svg' },
+        { name: 'vue', description: 'I`m a Vue.js man. I use it to build SPAs with routing and state and deploy them as PWAs.', image: 'vue_logo.svg' },
+        { name: 'amplify', description: 'I leverage the power of AWS Amplify to create NoSQL databases and Lambda functions to run the app.', image: 'amplify_logo.png' }
+      ]
+    }
+  },
 }
 </script>
 <style scoped>
@@ -71,6 +64,7 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 300px;
 }
 @media only screen and (min-width: 768px) {

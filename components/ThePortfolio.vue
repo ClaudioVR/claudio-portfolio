@@ -2,7 +2,10 @@
   <div>
     <div class="wrapper">
       <div>
-        <p class="text-center text-h2 mb-12 grey--text text--lighten-2">
+        <p
+          data-aos="fade-in"
+          class="text-center text-h2 mb-12 grey--text text--lighten-2"
+        >
           portfolio
         </p>
 
@@ -14,7 +17,7 @@
             cols="12"
             md="4"
           >
-            <v-card outlined max-width="350">
+            <v-card data-aos="fade-up" outlined max-width="350">
               <TopProject :image-name="project.image" />
               <v-card-text class="mt-n5">
                 <p class="text-center text-h5">{{ project.name }}</p>
@@ -36,7 +39,14 @@
           </v-col>
         </v-row>
         <div class="d-flex justify-center">
-          <v-btn nuxt to="/projects" class="mt-10" color="blue" dark>
+          <v-btn
+            data-aos="fade-in"
+            nuxt
+            to="/projects"
+            class="mt-10"
+            color="blue"
+            dark
+          >
             View more projects
           </v-btn>
         </div>
@@ -52,7 +62,7 @@ export default {
       projects: [
         {
           name: 'negApp',
-          description: 'I designed and built this commercial app for AgentOS. It includes an booking system and complete email service.',
+          description: 'I designed and built this commercial app for AgentOS. It includes a booking system and complete email service.',
           image: 'negApp.png',
           released: true,
           url: 'https://agentos.com/negapp/'
@@ -62,7 +72,7 @@ export default {
           description: 'A commercial PWA I designed and created for AgentOS. AgentPay includes live banking and invoicing.',
           image: 'agentPay.png',
           released: true,
-          url: 'https://agentos.com/agentpay/'
+          url: 'https://agentpay.app/'
         },
         {
           name: 'payAgent',
@@ -88,11 +98,12 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 550px;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
-    margin-top: 0px;
+    margin-top: 100px;
   }
 }
 </style>
