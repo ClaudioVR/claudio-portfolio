@@ -6,11 +6,11 @@
 
     <TheTech />
 
-    <ThePortfolio />
+    <ThePortfolio id="portfolio" />
 
     <!-- <TheApplications /> -->
 
-    <MyCv />
+    <MyCv id="cv" />
   </div>
 </template>
 

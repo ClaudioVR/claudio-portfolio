@@ -46,17 +46,24 @@ export default {
     return {
       projects: [
         {
+          name: "Skoyen Aikido",
+          image: 'skoyen-aikido',
+          description: "A static website created for my local martial arts club. Includes some particle.js and animate on scroll magic.",
+          technologies: 'Vue.js Nuxt.js',
+          url: 'https://www.skoyenaikido.no/'
+        },
+        {
           name: "NeoTyper",
           image: 'neotyper',
           description: "NeoTyper is an online 'green screen' writing platform created using Vue.js. Download your work as a .doc file.",
           technologies: 'Vue.js',
-          url: ''
+          url: 'https://neotyper.netlify.app/'
         },
         {
           name: "Fish n Code",
           image: 'fishncode',
           description: 'A static website for my company created using Nuxt.js. Great for SSR, Nuxt is also an excellent tool for creating static pages on the go.',
-          technologies: 'Nuxt.js',
+          technologies: 'Vue.js Nuxt.js',
           url: 'https://fishncode.netlify.app/'
         },
         {

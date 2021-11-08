@@ -8,8 +8,8 @@
       </NuxtLink>
 
       <v-spacer />
-      <NuxtLink to="#">portfolio</NuxtLink>
-      <NuxtLink to="#">cv</NuxtLink>
+      <NuxtLink to="/#portfolio">portfolio</NuxtLink>
+      <NuxtLink to="/#cv">cv</NuxtLink>
       <v-btn color="black" icon>
         <v-icon>mdi-facebook</v-icon>
       </v-btn>
