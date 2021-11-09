@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div>
         <p
-          data-aos="fade-in"
+          data-aos="fade-down"
           class="text-center text-h2 mb-12 grey--text text--lighten-2"
         >
           portfolio
@@ -99,7 +99,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 550px;
+  margin-top: 100vh;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {

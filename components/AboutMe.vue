@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="inner-wrapper">
         <p
-          data-aos="fade-in"
+          data-aos="fade-down"
           class="text-center text-h2 mb-12 grey--text text--lighten-2"
         >
           about me
@@ -21,7 +21,11 @@
           <v-col cols="12" sm="7">
             <div
               data-aos="fade-left"
-              class="text-h6 font-weight-regular text--grey text--darken-2"
+              class="
+                text-center text-sm-left text-h6
+                font-weight-regular
+                text--grey text--darken-2
+              "
             >
               <p>
                 I work remotely from Oslo for
@@ -44,12 +48,12 @@
                 since.
               </p>
               <p>
-                I`m a
+                I`m also a
                 <span class="blue--text">UXQB certified professional</span> who
                 places a great deal of importance on the user journey.
               </p>
             </div>
-            <div class="d-flex justify-end">
+            <div class="d-flex justify-center justify-sm-end">
               <v-chip
                 class="ml-3"
                 color="blue"
@@ -110,7 +114,7 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 500px;
 }
 .inner-wrapper {
   min-width: 100%;

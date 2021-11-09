@@ -4,13 +4,13 @@
 
     <LazyAboutMe />
 
-    <TheTech />
+    <LazyTheTech />
 
-    <ThePortfolio id="portfolio" />
+    <LazyThePortfolio id="portfolio" />
 
     <!-- <TheApplications /> -->
 
-    <MyCv id="cv" />
+    <LazyMyCv id="cv" />
   </div>
 </template>
 

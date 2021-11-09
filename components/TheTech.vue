@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div>
         <p
-          data-aos="fade-in"
+          data-aos="fade-down"
           class="text-center text-h2 mb-12 grey--text text--lighten-2"
         >
           the tech
@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       techs: [
-        { name: 'adobeXD', description: 'UI and UX debates and design starts with the wireframing. They`re at the base of everything i do.s', image: 'adobexd_logo.svg' },
+        { name: 'adobeXD', description: 'UI and UX debates and design starts with the wireframing. They`re at the base of everything I do.', image: 'adobexd_logo.svg' },
         { name: 'vue', description: 'I`m a Vue.js man. I use it to build SPAs with routing and state and deploy them as PWAs.', image: 'vue_logo.svg' },
         { name: 'amplify', description: 'I leverage the power of AWS Amplify to create NoSQL databases and Lambda functions to run the app.', image: 'amplify_logo.png' }
       ]
@@ -65,7 +65,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 100vh;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {

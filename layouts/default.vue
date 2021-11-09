@@ -3,22 +3,14 @@
     <v-app-bar hide-on-scroll flat :clipped-left="clipped" fixed app>
       <NuxtLink to="/">
         <v-toolbar-title>
-          <span class="ml-5">claudio rescigno</span>
+          <span class="d-sm-none ml-5">cR</span>
+          <span class="d-none d-sm-block ml-5">claudio rescigno</span>
         </v-toolbar-title>
       </NuxtLink>
 
       <v-spacer />
       <NuxtLink to="/#portfolio">portfolio</NuxtLink>
       <NuxtLink to="/#cv">cv</NuxtLink>
-      <v-btn color="black" icon>
-        <v-icon>mdi-facebook</v-icon>
-      </v-btn>
-      <v-btn color="black" icon>
-        <v-icon>mdi-linkedin</v-icon>
-      </v-btn>
-      <v-btn color="black" icon>
-        <v-icon>mdi-github</v-icon>
-      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container class="px-3">
@@ -26,8 +18,38 @@
       </v-container>
     </v-main>
 
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer color="primary lighten-1" padless :absolute="!fixed" app>
+      <v-row justify="center" no-gutters>
+        <div class="d-flex justify-center align-center">
+          <v-btn
+            dark
+            icon
+            @click="reRoute('https://www.facebook.com/claudio.rescigno.359')"
+          >
+            <v-icon>mdi-facebook</v-icon>
+          </v-btn>
+          <v-btn
+            x-large
+            dark
+            icon
+            @click="
+              reRoute('https://no.linkedin.com/in/claudio-rescigno-6b0531177')
+            "
+          >
+            <v-icon>mdi-linkedin</v-icon>
+          </v-btn>
+          <v-btn
+            dark
+            icon
+            @click="reRoute('https://github.com/ClaudioVR?tab=repositories')"
+          >
+            <v-icon>mdi-github</v-icon>
+          </v-btn>
+        </div>
+        <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
+          <span>&copy;{{ new Date().getFullYear() }} claudio rescigno</span>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
@@ -55,6 +77,11 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'claudio rescigno'
+    }
+  },
+  methods: {
+    reRoute(url) {
+      window.open(url, "_blank")
     }
   }
 }

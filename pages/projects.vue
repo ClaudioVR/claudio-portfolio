@@ -1,11 +1,30 @@
 <template>
   <div>
-    <p class="text-center text-h2 mb-12">Portfolio</p>
-    <p class="text-center text-h5">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus id
-      at totam? Earum, nemo inventore!
+    <p class="text-center text-h2 mt-5 mb-8">My projects</p>
+    <p
+      class="
+        font-weight-light
+        my-0
+        text-center text-h6
+        grey--text
+        text--darken-2
+      "
+    >
+      Here's a bunch of side projects I've created.
     </p>
-    <div class="d-flex flex-wrap">
+    <p
+      class="
+        font-weight-light
+        my-0
+        text-center text-h6
+        grey--text
+        text--darken-2
+      "
+    >
+      From static web pages to web applications with some CSS tricks thrown in
+      here and there.
+    </p>
+    <div class="mt-5 d-flex flex-wrap">
       <v-card
         v-for="(project, i) in projects"
         :key="i"
