@@ -9,7 +9,7 @@
           portfolio
         </p>
 
-        <v-row>
+        <v-row data-aos="fade-up">
           <v-col
             v-for="project in projects"
             :key="project.name"
@@ -17,11 +17,13 @@
             cols="12"
             md="4"
           >
-            <v-card data-aos="fade-up" outlined max-width="350">
+            <v-card outlined max-width="350">
               <TopProject :image-name="project.image" />
               <v-card-text class="mt-n5">
                 <p class="text-center text-h5">{{ project.name }}</p>
-                <p class="text-center">{{ project.description }}</p>
+                <p class="text-center text-body-1 font-weight-light">
+                  {{ project.description }}
+                </p>
                 <div class="d-flex justify-center">
                   <v-btn
                     color="blue"
@@ -99,7 +101,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100vh;
+  margin-top: 600px;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {

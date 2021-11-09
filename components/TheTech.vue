@@ -29,7 +29,7 @@
                 <v-spacer></v-spacer>
               </v-card-title>
               <v-card-text class="text-center">
-                <p class="text-h6">
+                <p class="text-body-1 font-weight-light">
                   {{ tech.description }}
                 </p>
               </v-card-text>
@@ -50,9 +50,9 @@ export default {
   data() {
     return {
       techs: [
-        { name: 'adobeXD', description: 'UI and UX debates and design starts with the wireframing. They`re at the base of everything I do.', image: 'adobexd_logo.svg' },
-        { name: 'vue', description: 'I`m a Vue.js man. I use it to build SPAs with routing and state and deploy them as PWAs.', image: 'vue_logo.svg' },
-        { name: 'amplify', description: 'I leverage the power of AWS Amplify to create NoSQL databases and Lambda functions to run the app.', image: 'amplify_logo.png' }
+        { name: 'adobeXD', description: 'UI and UX debates and designs start with the wireframing. They`re at the base of everything I do.', image: 'adobexd_logo.svg' },
+        { name: 'vue', description: 'I`m a Vue.js man. I build SPAs with it, complete with page routing and state. The apps are then deployed as PWAs.', image: 'vue_logo.svg' },
+        { name: 'amplify', description: 'I leverage the power of AWS Amplify to create NoSQL databases and Lambda functions to run the apps.', image: 'amplify_logo.png' }
       ]
     }
   },
@@ -65,7 +65,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100vh;
+  margin-top: 350px;
+  /* margin-bottom: 200px; */
 }
 @media only screen and (min-width: 768px) {
   .wrapper {

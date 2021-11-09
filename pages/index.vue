@@ -6,11 +6,13 @@
 
     <LazyTheTech />
 
-    <LazyThePortfolio id="portfolio" />
+    <div id="portfolio"></div>
+    <LazyThePortfolio />
 
     <!-- <TheApplications /> -->
 
-    <LazyMyCv id="cv" />
+    <div id="cv"></div>
+    <LazyMyCv />
   </div>
 </template>
 
@@ -24,3 +26,9 @@ export default {
   },
 }
 </script>
+<style scoped>
+#portfolio #cv {
+  height: 5px;
+  width: 100%;
+}
+</style>

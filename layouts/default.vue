@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar hide-on-scroll flat :clipped-left="clipped" fixed app>
+    <v-app-bar flat :clipped-left="clipped" fixed app>
       <NuxtLink to="/">
         <v-toolbar-title>
           <span class="d-sm-none ml-5">cR</span>
@@ -18,7 +18,7 @@
       </v-container>
     </v-main>
 
-    <v-footer color="primary lighten-1" padless :absolute="!fixed" app>
+    <v-footer color="grey lighten-1" padless :absolute="!fixed" app>
       <v-row justify="center" no-gutters>
         <div class="d-flex justify-center align-center">
           <v-btn
@@ -46,7 +46,7 @@
             <v-icon>mdi-github</v-icon>
           </v-btn>
         </div>
-        <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
+        <v-col class="grey lighten-2 py-4 text-center white--text" cols="12">
           <span>&copy;{{ new Date().getFullYear() }} claudio rescigno</span>
         </v-col>
       </v-row>

@@ -9,82 +9,80 @@
           about me
         </p>
         <v-row>
-          <v-col cols="12" sm="5">
-            <img
-              data-aos="fade-right"
+          <v-col
+            cols="12"
+            sm="3"
+            class="d-flex justify-center"
+            data-aos="fade-up"
+          >
+            <!-- <img
+              data-aos="fade-up"
               height="auto"
               width="100%"
               src="about-me.svg"
               alt="Claudio"
-            />
+            /> -->
+            <v-avatar color="" size="300">
+              <img src="about-me.svg" alt="Claudio image" />
+            </v-avatar>
           </v-col>
-          <v-col cols="12" sm="7">
-            <div
-              data-aos="fade-left"
-              class="
-                text-center text-sm-left text-h6
-                font-weight-regular
-                text--grey text--darken-2
-              "
-            >
-              <p>
-                I work remotely from Oslo for
-                <a
-                  class="orange--text text-decoration-none"
-                  href="https://www.linkedin.com/company/agentos-com"
-                  target="_blank"
-                  >AgentOS</a
+          <v-col cols="12" sm="9" class="d-flex align-center">
+            <div>
+              <div
+                data-aos="fade-up"
+                class="
+                  text-center text-sm-left text-body-1
+                  font-weight-light
+                  text--grey text--darken-2
+                "
+              >
+                <p>
+                  I work remotely from Oslo designing and creating applications
+                  for the british real estate industry.
+                </p>
+                <p>
+                  At
+                  <a
+                    class="orange--text text-decoration-none"
+                    href="https://www.linkedin.com/company/agentos-com"
+                    target="_blank"
+                    >AgentOS</a
+                  >
+                  I have designed and created a number of successful financial
+                  applications.
+                </p>
+                <p>
+                  My background is in social sceince, with more than 10 years
+                  spent working in teaching, recruitment and tourism marketing.
+                </p>
+                <p>
+                  A short stint studying computer science at university fueled
+                  my career into front-end development in 2018 and I haven't
+                  looked back since.
+                </p>
+                <p>
+                  I`m also a
+                  <span class="blue--text">UXQB certified professional</span>
+                  who places a great deal of importance on the user journey.
+                </p>
+              </div>
+              <div class="mt-5 d-flex justify-center justify-sm-start">
+                <v-chip
+                  class=""
+                  color="blue"
+                  dark
+                  @click="goTo('https://uxqb.org/en/')"
+                  >#uxqbProfessional</v-chip
                 >
-                designing and creating applications for the british real estate
-                industry.
-              </p>
-              <p>
-                My background is in humanities, with more than 10 years spent
-                working in teaching, recruitment and tourism marketing.
-              </p>
-              <p>
-                After a stint in computer science at university, I veered back
-                into front-end development in 2018 and haven't looked back
-                since.
-              </p>
-              <p>
-                I`m also a
-                <span class="blue--text">UXQB certified professional</span> who
-                places a great deal of importance on the user journey.
-              </p>
-            </div>
-            <div class="d-flex justify-center justify-sm-end">
-              <v-chip
-                class="ml-3"
-                color="blue"
-                dark
-                @click="goTo('https://uxqb.org/en/')"
-                >#uxqbProfessional</v-chip
-              >
 
-              <v-chip
-                class="ml-3"
-                color="orange"
-                dark
-                @click="goTo('https://agentos.com/')"
-                >#agentos</v-chip
-              >
-
-              <!-- <v-chip
-                class="ml-3"
-                color="orange"
-                dark
-                @click="goTo('https://v3.vuejs.org/')"
-                >#vue3</v-chip
-              >
-
-              <v-chip
-                class="ml-3"
-                color="orange"
-                dark
-                @click="goTo('https://aws.amazon.com/amplify/')"
-                >#amplify</v-chip
-              > -->
+                <v-chip
+                  class="ml-3"
+                  color="orange"
+                  dark
+                  @click="goTo('https://agentos.com/')"
+                  >#agentos</v-chip
+                >
+              </div>
             </div>
           </v-col>
         </v-row>
@@ -114,7 +112,7 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 500px;
+  margin-top: 300px;
 }
 .inner-wrapper {
   min-width: 100%;

@@ -3,31 +3,37 @@
     <div class="wrapper d-flex align-center justify-center">
       <div v-if="showContent">
         <div class="d-sm-flex align-center">
-          <v-avatar data-aos="fade-in" size="250">
-            <img src="/images/claudio-img.jpg" alt="John" />
+          <v-avatar
+            data-aos="fade-in"
+            size="300"
+            @mouseover="hover = true"
+            @mouseout="hover = false"
+          >
+            <!-- <img src="/images/claudio-img.jpg" alt="Claudio image" /> -->
+            <img src="/images/claudioAvatar.png" alt="Claudio image" />
           </v-avatar>
           <div
             class="
               text-center
               mt-5 mt-sm-0
               text-sm-left
-              ml-sm-5
+              ml-sm-10
               grey--text
               text--darken-3
             "
           >
-            <p class="my-0 text-h4" data-aos="fade-left">claudio rescigno</p>
+            <p class="my-0 text-h4" data-aos="fade-up">claudio rescigno</p>
             <p
               class="mt-3 mb-0 text-h6"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="200"
             >
               front end developer
             </p>
-            <p class="my-0" data-aos="fade-left" data-aos-delay="400">
+            <p class="my-0" data-aos="fade-up" data-aos-delay="400">
               oslo, norway
             </p>
-            <div
+            <!-- <div
               data-aos="fade-in"
               data-aos-delay="600"
               class="languages d-flex justify-center justify-sm-start mt-5"
@@ -40,7 +46,7 @@
                   />
                 </v-avatar>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="d-flex justify-center chevron">
@@ -71,7 +77,7 @@ export default {
         "no",
         "es",
         "fr"
-      ]
+      ],
     }
   },
   mounted() {

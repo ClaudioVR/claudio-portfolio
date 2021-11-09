@@ -12,7 +12,7 @@
         </template>
         <v-card class="elevation-2">
           <v-card-title class="text-h5">
-            {{ job.position }}
+            <span class="grey--text text--darken-2">{{ job.position }}</span>
             <v-spacer></v-spacer>
             <v-img
               contain
@@ -22,7 +22,9 @@
             ></v-img>
           </v-card-title>
           <v-card-text class="mt-n1">
-            <p class="mb-0">{{ job.description }}</p>
+            <p class="mb-0 font-weight-light text-body-1">
+              {{ job.description }}
+            </p>
           </v-card-text>
         </v-card>
       </v-timeline-item>

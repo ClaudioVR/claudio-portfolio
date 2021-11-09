@@ -15,7 +15,7 @@
           curriculum vitae
         </p>
 
-        <Timeline data-aos="fade-in" />
+        <Timeline data-aos="fade-up" />
       </div>
     </div>
   </div>
@@ -33,8 +33,8 @@ export default {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 100vh;
-  margin-bottom: 200px;
+  margin-top: 450px;
+  margin-bottom: 100px;
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
