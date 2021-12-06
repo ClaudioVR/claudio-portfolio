@@ -42,7 +42,6 @@
         </v-row>
         <div class="d-flex justify-center">
           <v-btn
-            data-aos="fade-in"
             nuxt
             to="/projects"
             class="mt-10"
