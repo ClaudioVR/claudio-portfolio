@@ -48,7 +48,7 @@ export default {
           company: 'AgentOS',
           position: 'Front End Developer',
           description: 'Designing and building financial applications for the British real estate industry. These include AgentPay, NegApp and the PayAgent applications.',
-          dates: 'Aug 2019 - Present',
+          dates: 'July 2019 - Present',
           image: 'agentos'
         },
         {

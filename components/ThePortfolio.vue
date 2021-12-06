@@ -42,7 +42,7 @@
         </v-row>
         <div class="d-flex justify-center">
           <v-btn
-            nuxt
+             nuxt
             to="/projects"
             class="mt-10"
             color="blue"
