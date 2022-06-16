@@ -125,7 +125,7 @@ export default {
           image: 'jungle-mockup',
           description:
             "Recreating Jungle's homepage with nothing more than some CSS and a little JavaScript to create the menu's modal window",
-          technologies: 'CSS£, Javascript',
+          technologies: 'CSS3, Javascript',
           url: 'https://claudiovr.github.io/Jungle-mockup/',
         },
         {

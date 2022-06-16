@@ -47,35 +47,35 @@ export default {
         {
           company: 'AgentOS',
           position: 'Front End Developer',
-          description: 'Designing and building financial applications for the British real estate industry. These include AgentPay, NegApp and the PayAgent applications.',
-          dates: 'July 2019 - Present',
-          image: 'agentos'
+          description:
+            'Designing and building financial applications for the British real estate industry. Including AgentPay, NegApp, PayAgent and CalmonyApp Beta.',
+          dates: 'July 2019 - May 2022',
+          image: 'agentos',
         },
         {
           company: 'VisitOSLO',
           position: 'Project Leader Int. Media',
-          description: 'Managing international media visits and projects in Oslo. I also worked as a Front Office Manager and Information Consultant during my time there.',
+          description:
+            'Managing international media visits and projects in Oslo. I also worked as a Front Office Manager and Information Consultant during my time there.',
           dates: '5 Years',
-          image: 'visitoslo'
+          image: 'visitoslo',
         },
       ],
-
     }
   },
   computed: {
     ifDevice() {
       if (this.$vuetify.breakpoint.smAndDown) return true
       return false
-    }
+    },
   },
   methods: {
     rerouteLinkedin() {
       const url = 'https://no.linkedin.com/in/claudio-rescigno-6b0531177'
       window.open(url, '_blank')
-    }
-  }
+    },
+  },
 }
 </script>
 
-<style>
-</style>
+<style></style>

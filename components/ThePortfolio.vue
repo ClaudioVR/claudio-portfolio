@@ -58,7 +58,7 @@ export default {
         {
           name: 'negApp',
           description:
-            'I designed and built this commercial app for AgentOS. It includes a booking system and complete email service.',
+            'I created this commercial app for AgentOS. Includes appointment booking system and full email service.',
           image: 'negApp.png',
           released: true,
           url: 'https://agentos.com/negapp/',
@@ -66,7 +66,7 @@ export default {
         {
           name: 'agentPay',
           description:
-            'A commercial PWA I designed and created for AgentOS. AgentPay includes live banking and invoicing.',
+            'A commercial PWA created for AgentOS. AgentPay includes live banking, invoicing and a killer dashboard.',
           image: 'agentPay.png',
           released: true,
           url: 'https://agentpay.app/',

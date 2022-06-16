@@ -37,8 +37,8 @@
                 "
               >
                 <p>
-                  I work remotely from Oslo designing and creating applications
-                  for the british real estate industry.
+                  I'm a creative frontend developer with an passion for UX
+                  design.
                 </p>
                 <p>
                   At
@@ -48,8 +48,8 @@
                     target="_blank"
                     >AgentOS</a
                   >
-                  I have designed and created a number of successful financial
-                  applications.
+                  I designed and created a number of successful financial
+                  applications for the british real estate industry.
                 </p>
                 <p>
                   My background is in social sceince, with more than 10 years
@@ -94,15 +94,13 @@
 <script>
 export default {
   data() {
-    return {
-
-    }
+    return {}
   },
   methods: {
     goTo(url) {
       window.open(url, '_blank')
-    }
-  }
+    },
+  },
 }
 </script>
 
