@@ -41,13 +41,7 @@
           </v-col>
         </v-row>
         <div class="d-flex justify-center">
-          <v-btn
-             nuxt
-            to="/projects"
-            class="mt-10"
-            color="blue"
-            dark
-          >
+          <v-btn nuxt to="/projects" class="mt-10" color="blue" dark>
             View more projects
           </v-btn>
         </div>
@@ -63,33 +57,36 @@ export default {
       projects: [
         {
           name: 'negApp',
-          description: 'I designed and built this commercial app for AgentOS. It includes a booking system and complete email service.',
+          description:
+            'I designed and built this commercial app for AgentOS. It includes a booking system and complete email service.',
           image: 'negApp.png',
           released: true,
-          url: 'https://agentos.com/negapp/'
+          url: 'https://agentos.com/negapp/',
         },
         {
           name: 'agentPay',
-          description: 'A commercial PWA I designed and created for AgentOS. AgentPay includes live banking and invoicing.',
+          description:
+            'A commercial PWA I designed and created for AgentOS. AgentPay includes live banking and invoicing.',
           image: 'agentPay.png',
           released: true,
-          url: 'https://agentpay.app/'
+          url: 'https://agentpay.app/',
         },
         {
           name: 'payAgent',
-          description: 'PayAgent is an online payment platform. It allows users to make online payments in a fast and secure manner.',
+          description:
+            'PayAgent is an online payment app that lets users make secure online payments by card and bank transfer.',
           image: 'payAgent.png',
-          released: false,
-          url: ''
+          released: true,
+          url: 'https://agentos.com/payment-app/',
         },
-      ]
+      ],
     }
   },
   methods: {
     reroute(url) {
       window.open(url, '_blank')
-    }
-  }
+    },
+  },
 }
 </script>
 
