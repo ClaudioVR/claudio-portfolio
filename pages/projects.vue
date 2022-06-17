@@ -10,19 +10,8 @@
         text--darken-2
       "
     >
-      Here's a bunch of side projects I've created.
-    </p>
-    <p
-      class="
-        font-weight-light
-        my-0
-        text-center text-h6
-        grey--text
-        text--darken-2
-      "
-    >
-      From static web pages to web applications with some CSS tricks thrown in
-      here and there.
+      Single page web applications, static websites and some plain old CSS
+      tricks thrown in here and there.
     </p>
     <div class="mt-5 d-flex flex-wrap">
       <v-card
@@ -78,8 +67,8 @@ export default {
           name: 'Dr.Dropin',
           image: 'dr-dropin',
           description:
-            "A working mock version of Dr.Dropin's website. Built as an SPA with Nuxt, powered by Vue.js with full app state.",
-          technologies: 'Vue.js Nuxt.js',
+            "A responsive copy of Dr.Dropin's website. Built as an SPA with Nuxt, powered by Vue.js with full app state. Book yourself a mock appointment!",
+          technologies: 'Vue.js, Nuxt.js',
           url: 'https://dr-dropin-mock-website.netlify.app/',
           repo: 'https://github.com/ClaudioVR/dr-dropin',
         },
@@ -88,7 +77,7 @@ export default {
           image: 'skoyen-aikido',
           description:
             'A static website created for my local martial arts club. Includes some particle.js and animate on scroll magic.',
-          technologies: 'Vue.js Nuxt.js',
+          technologies: 'Vue.js, Nuxt.js',
           url: 'https://www.skoyenaikido.no/',
         },
         {
@@ -101,15 +90,32 @@ export default {
           repo: 'https://github.com/ClaudioVR/Neo-typewriter',
         },
         {
+          name: 'Kanban board',
+          image: 'kanban',
+          description:
+            "A quick project exploring the possibilties of drag and drop plugins for vue.js app. In this case I've used it to make a Kanban board.",
+          technologies: 'Vue.js, Vuetify',
+          url: 'https://kan-ban-board.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/kanban-board',
+        },
+        {
           name: 'Fish n Code',
           image: 'fishncode',
           description:
             'A static website for my company created using Nuxt.js. Great for SSR, Nuxt is also an excellent tool for creating static pages on the go.',
-          technologies: 'Vue.js Nuxt.js',
+          technologies: 'Vue.js, Nuxt.js',
           url: 'https://fishncode.netlify.app/',
           repo: 'https://github.com/ClaudioVR/FishnCode',
         },
-
+        {
+          name: 'Vue.js playground',
+          image: 'playground',
+          description:
+            'A testing ground for Vue.js plugins. Drag grids, design football formations, create documents to download and sign your name digitally!',
+          technologies: 'Vue.js',
+          url: 'https://vue-playgound.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/vue-playground',
+        },
         {
           name: 'Visit Bøler.com',
           image: 'visit-boler',
