@@ -49,6 +49,16 @@
         <v-divider class="mx-4"></v-divider>
 
         <v-card-actions>
+          <v-btn
+            small
+            text
+            fab
+            depressed
+            color="black"
+            dark
+            @click="repoReroute(project)"
+            ><v-icon>mdi-github</v-icon></v-btn
+          >
           <v-spacer></v-spacer>
           <v-btn color="blue" text @click="reroute(project.url)">
             View project
@@ -71,9 +81,10 @@ export default {
             "A working mock version of Dr.Dropin's website. Built as an SPA with Nuxt, powered by Vue.js with full app state.",
           technologies: 'Vue.js Nuxt.js',
           url: 'https://dr-dropin-mock-website.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/dr-dropin',
         },
         {
-          name: 'Skoyen Aikido',
+          name: 'Skøyen Aikido',
           image: 'skoyen-aikido',
           description:
             'A static website created for my local martial arts club. Includes some particle.js and animate on scroll magic.',
@@ -87,6 +98,7 @@ export default {
             "NeoTyper is an online 'green screen' writing platform created using Vue.js. Download your work as a .doc file.",
           technologies: 'Vue.js',
           url: 'https://neotyper.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/Neo-typewriter',
         },
         {
           name: 'Fish n Code',
@@ -95,15 +107,9 @@ export default {
             'A static website for my company created using Nuxt.js. Great for SSR, Nuxt is also an excellent tool for creating static pages on the go.',
           technologies: 'Vue.js Nuxt.js',
           url: 'https://fishncode.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/FishnCode',
         },
-        {
-          name: 'Layer animations',
-          image: 'layer-animations',
-          description:
-            'Art always challenges and inspires my web styling. Watch CSS animations transform this canvass into its respective layers on :hover',
-          technologies: 'CSS3',
-          url: 'https://claudiovr.github.io/Odd-Tandberg-mockup/',
-        },
+
         {
           name: 'Visit Bøler.com',
           image: 'visit-boler',
@@ -111,6 +117,7 @@ export default {
             'A mock tourist office website for Bøler. An experiment in reproducing a page using nothing more than Matrialize and some vanilla CSS.',
           technologies: 'CC3, Materialize CSS',
           url: 'https://claudiovr.github.io/Visit-Boeler-dot-com/',
+          repo: 'https://github.com/ClaudioVR/Visit-Boeler-dot-com',
         },
         {
           name: 'JojoJayne.com',
@@ -127,6 +134,7 @@ export default {
             "Recreating Jungle's homepage with nothing more than some CSS and a little JavaScript to create the menu's modal window",
           technologies: 'CSS3, Javascript',
           url: 'https://claudiovr.github.io/Jungle-mockup/',
+          repo: 'https://github.com/ClaudioVR/Jungle-mockup',
         },
         {
           name: 'Zen app',
@@ -135,6 +143,16 @@ export default {
             'A fun side project. The zen app is the perfect tool to help you take 5 minutes to chill out, wherever you are. Go with the chimes.',
           technologies: 'Vue.js',
           url: 'https://zen-app.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/Zen_app',
+        },
+        {
+          name: 'Layer animations',
+          image: 'layer-animations',
+          description:
+            'Art always challenges and inspires my web styling. Watch CSS animations transform this canvass into its respective layers on :hover',
+          technologies: 'CSS3',
+          url: 'https://claudiovr.github.io/Odd-Tandberg-mockup/',
+          repo: 'https://github.com/ClaudioVR/Odd-Tandberg-mockup',
         },
         {
           name: 'CSS art',
@@ -143,14 +161,7 @@ export default {
             'CSS3 animations bringing to life these real-life canvasses by artist Alero Meggison. Art always inspires my front-end design.',
           technologies: 'CSS3',
           url: 'https://claudiovr.github.io/CSS-Art-Alero/',
-        },
-        {
-          name: 'Beer exchange',
-          image: 'beer-exchange',
-          description:
-            'An early project. Prices vary based on the availability of stock. Hit the market crash button to drop prices by ten percent',
-          technologies: 'Vue.js',
-          url: 'https://vue-beer-exchange.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/CSS-Art-Alero',
         },
       ],
     }
@@ -158,6 +169,15 @@ export default {
   methods: {
     reroute(url) {
       window.open(url, '_blank')
+    },
+    repoReroute(project) {
+      if (project.name === 'Skøyen Aikido') {
+        alert('The Skøyen Aikido Club repo is private!')
+      } else if (project.name === 'JojoJayne.com') {
+        alert('JojoJayne.com is a Wordpress project!')
+      } else {
+        window.open(project.repo, '_blank')
+      }
     },
   },
 }

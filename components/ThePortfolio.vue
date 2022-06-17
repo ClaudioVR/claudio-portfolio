@@ -1,5 +1,31 @@
 <template>
   <div>
+    <v-dialog
+      v-model="warningDialog"
+      max-width="500px"
+      transition="dialog-transition"
+    >
+      <v-card>
+        <v-card-title class="d-flex blue white--text">
+          Github repository
+          <v-spacer></v-spacer>
+          <v-btn color="blue" fab dark depressed small
+            ><v-icon>mdi-close</v-icon></v-btn
+          >
+        </v-card-title>
+        <v-card-text class="pt-5">
+          <p class="text-body-1">
+            Commercial apps are property of AgentOS Ltd of Cardiff (UK). All
+            their repositories are thus set to Private.
+          </p>
+          <p class="text-body-1">
+            I can happily provide reference contacts from AgentOS if requested.
+          </p>
+
+          <p></p>
+        </v-card-text>
+      </v-card>
+    </v-dialog>
     <div class="wrapper">
       <div>
         <p
@@ -24,16 +50,26 @@
                 <p class="text-center text-body-1 font-weight-light">
                   {{ project.description }}
                 </p>
-                <div class="d-flex justify-center">
+                <div class="d-flex justify-space-between align-center">
+                  <v-btn
+                    x-small
+                    outlined
+                    fab
+                    depressed
+                    color="black"
+                    dark
+                    @click="warningDialog = true"
+                    ><v-icon>mdi-github</v-icon></v-btn
+                  >
                   <v-btn
                     color="blue"
-                    outlined
+                    dark
                     :disabled="!project.released"
                     small
+                    depressed
                     @click="reroute(project.url)"
                   >
-                    <p v-if="project.released" class="my-0">View project</p>
-                    <p v-else class="my-0">Awaiting release</p>
+                    <p class="my-0">View project</p>
                   </v-btn>
                 </div>
               </v-card-text>
@@ -54,11 +90,12 @@
 export default {
   data() {
     return {
+      warningDialog: false,
       projects: [
         {
           name: 'negApp',
           description:
-            'I created this commercial app for AgentOS. Includes appointment booking system and full email service.',
+            'My first commercial app created for AgentOS. Includes appointment booking system and full email service.',
           image: 'negApp.png',
           released: true,
           url: 'https://agentos.com/negapp/',
