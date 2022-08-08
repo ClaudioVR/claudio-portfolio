@@ -8,7 +8,8 @@
         small
       >
         <template #opposite>
-          <span class="text-h6 font-weight-light">{{ job.dates }}</span>
+          <p class="text-h6 font-weight-light my-0">{{ job.dates }}</p>
+          <p class="font-weight-light my-0">{{ job.length }}</p>
         </template>
         <v-card class="elevation-2">
           <v-card-title class="text-h5">
@@ -50,6 +51,7 @@ export default {
           description:
             'Designing and building financial applications for the British real estate industry. Including AgentPay, NegApp, PayAgent and CalmonyApp Beta.',
           dates: 'July 2019 - May 2022',
+          length: '2 years 11 months',
           image: 'agentos',
         },
         {
@@ -57,7 +59,8 @@ export default {
           position: 'Project Leader Int. Media',
           description:
             'Managing international media visits and projects in Oslo. I also worked as a Front Office Manager and Information Consultant during my time there.',
-          dates: '5 Years',
+          dates: 'April 2013 - March 2018',
+          length: '5 years',
           image: 'visitoslo',
         },
       ],

@@ -11,6 +11,14 @@
       <v-spacer />
       <NuxtLink to="/#portfolio">portfolio</NuxtLink>
       <NuxtLink to="/#cv">cv</NuxtLink>
+      <v-btn
+      class="ml-n4"
+        icon
+        href="https://github.com/ClaudioVR?tab=repositories"
+        target="blank"
+      >
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container class="px-3">
@@ -22,26 +30,32 @@
       <v-row justify="center" no-gutters>
         <div class="d-flex justify-center align-center">
           <v-btn
+            class="mx-1 my-2"
+            large
             dark
             icon
-            @click="reRoute('https://www.facebook.com/claudio.rescigno.359')"
+            href="https://www.facebook.com/claudio.rescigno.359"
+            target="blank"
           >
             <v-icon>mdi-facebook</v-icon>
           </v-btn>
           <v-btn
-            x-large
+            class="mx-1 my-2"
+            large
             dark
             icon
-            @click="
-              reRoute('https://no.linkedin.com/in/claudio-rescigno-6b0531177')
-            "
+            href="https://no.linkedin.com/in/claudio-rescigno-6b0531177"
+            target="blank"
           >
             <v-icon>mdi-linkedin</v-icon>
           </v-btn>
           <v-btn
+            class="mx-1 my-2"
+            large
             dark
             icon
-            @click="reRoute('https://github.com/ClaudioVR?tab=repositories')"
+            href="https://github.com/ClaudioVR?tab=repositories"
+            target="blank"
           >
             <v-icon>mdi-github</v-icon>
           </v-btn>
