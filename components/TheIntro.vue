@@ -13,14 +13,7 @@
             <img src="/images/claudioAvatar.png" alt="Claudio image" />
           </v-avatar>
           <div
-            class="
-              text-center
-              mt-5 mt-sm-0
-              text-sm-left
-              ml-sm-10
-              grey--text
-              text--darken-3
-            "
+            class="text-center mt-5 mt-sm-0 text-sm-left ml-sm-10 grey--text text--darken-3"
           >
             <p class="my-0 text-h4" data-aos="fade-up">claudio rescigno</p>
             <p
@@ -50,7 +43,7 @@
           </div>
         </div>
         <div class="d-flex justify-center chevron">
-          <v-btn color="grey lighten-3" text>
+          <v-btn nuxt to="/#aboutMe" color="grey lighten-3" text>
             <v-icon x-large>mdi-chevron-down</v-icon>
           </v-btn>
         </div>
@@ -71,13 +64,7 @@ export default {
   data() {
     return {
       showContent: false,
-      languages: [
-        "gb",
-        "it",
-        "no",
-        "es",
-        "fr"
-      ],
+      languages: ['gb', 'it', 'no', 'es', 'fr'],
     }
   },
   mounted() {

@@ -2,7 +2,7 @@
   <div>
     <TheIntro />
 
-    <LazyAboutMe />
+    <LazyAboutMe id="aboutMe" />
 
     <LazyTheTech />
 
@@ -17,12 +17,9 @@
 </template>
 
 <script>
-
 export default {
   data() {
-    return {
-
-    }
+    return {}
   },
 }
 </script>
