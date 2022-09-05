@@ -1,17 +1,10 @@
 <template>
   <div>
-    <p class="text-center text-h2 mt-5 mb-8">My projects</p>
+    <p class="text-center text-h2 mt-5 mb-8">Non commercial projects</p>
     <p
-      class="
-        font-weight-light
-        my-0
-        text-center text-h6
-        grey--text
-        text--darken-2
-      "
+      class="font-weight-light my-0 text-center text-h6 grey--text text--darken-2"
     >
-      Single page web applications, static websites and some plain old CSS
-      tricks thrown in here and there.
+      Single page web applications, static websites and some plain old CSS.
     </p>
     <div class="mt-5 d-flex flex-wrap">
       <v-card
@@ -68,16 +61,25 @@ export default {
           image: 'dr-dropin',
           description:
             "A responsive copy of Dr.Dropin's website. Built as an SPA with Nuxt, powered by Vue.js with full app state. Book yourself a mock appointment!",
-          technologies: 'Vue.js, Nuxt.js',
+          technologies: 'Vue.js, Nuxt.js, Vuetify',
           url: 'https://dr-dropin-mock-website.netlify.app/',
           repo: 'https://github.com/ClaudioVR/dr-dropin',
+        },
+        {
+          name: 'Admin App',
+          image: 'adminApp',
+          description:
+            'A mock membership administration app for a potential martial arts club, complete with useful statistics.',
+          technologies: 'Vue.js, Vuetify',
+          url: 'https://member-admin-app.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/member-admin-app',
         },
         {
           name: 'Skøyen Aikido',
           image: 'skoyen-aikido',
           description:
             'A static website created for my local martial arts club. Includes some particle.js and animate on scroll magic.',
-          technologies: 'Vue.js, Nuxt.js',
+          technologies: 'Vue.js, Nuxt.js, Vuetify',
           url: 'https://www.skoyenaikido.no/',
         },
         {
@@ -88,6 +90,15 @@ export default {
           technologies: 'Vue.js',
           url: 'https://neotyper.netlify.app/',
           repo: 'https://github.com/ClaudioVR/Neo-typewriter',
+        },
+        {
+          name: 'Pure Table',
+          image: 'pureTable',
+          description:
+            'This is a fully functional table with sorting and CRUD actions. It was creted using pure frontend tools.',
+          technologies: 'HTML, CSS, Javascript',
+          url: 'https://pure-html-css-js-table.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/Simple-CSS-table',
         },
         {
           name: 'Kanban board',
@@ -103,7 +114,7 @@ export default {
           image: 'fishncode',
           description:
             'A static website for my company created using Nuxt.js. Great for SSR, Nuxt is also an excellent tool for creating static pages on the go.',
-          technologies: 'Vue.js, Nuxt.js',
+          technologies: 'Vue.js, Nuxt.js, Vuetify',
           url: 'https://fishncode.netlify.app/',
           repo: 'https://github.com/ClaudioVR/FishnCode',
         },

@@ -30,9 +30,15 @@
       <div>
         <p
           data-aos="fade-down"
-          class="text-center text-h2 mb-12 grey--text text--lighten-2"
+          class="text-center text-h2 grey--text text--lighten-2"
         >
           portfolio
+        </p>
+        <p
+          data-aos="fade-down"
+          class="text-center font-italic text-h6 mb-12 grey--text text--lighten-2"
+        >
+          commercial apps
         </p>
 
         <v-row data-aos="fade-up">

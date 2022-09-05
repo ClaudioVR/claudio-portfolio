@@ -7,7 +7,7 @@
     <LazyTheTech />
 
     <div id="portfolio"></div>
-    <LazyThePortfolio />
+    <ThePortfolio />
 
     <!-- <TheApplications /> -->
 
@@ -24,8 +24,8 @@ export default {
 }
 </script>
 <style scoped>
-#portfolio #cv {
+/* #portfolio #cv {
   height: 5px;
   width: 100%;
-}
+} */
 </style>
