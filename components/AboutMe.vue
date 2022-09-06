@@ -16,7 +16,7 @@
             data-aos="fade-up"
           >
             <v-avatar
-              data-aos="fade-right"
+              data-aos="fade-up"
               size="225"
               @mouseover="hover = true"
               @mouseout="hover = false"
@@ -27,7 +27,7 @@
           <v-col cols="12" sm="9" class="d-flex align-center">
             <div>
               <div
-                data-aos="fade-left"
+                data-aos="fade-up"
                 class="text-center text-sm-left text-body-1 font-weight-light text--grey text--darken-2"
               >
                 <p>
