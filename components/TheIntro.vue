@@ -49,6 +49,7 @@ export default {
 .logo-wrapper {
   height: 300px;
   width: 500px;
+  padding: 0 20px;
 }
 
 #secondary-titles {
