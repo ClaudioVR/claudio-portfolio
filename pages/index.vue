@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TheIntro />
+    <TheIntro id="intro" />
 
     <LazyAboutMe id="aboutMe" />
 

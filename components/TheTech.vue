@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div>
         <p
-          data-aos="fade-down"
+          data-aos="fade-up"
           class="text-center text-h2 mb-12 grey--text text--lighten-2"
         >
           the tech
@@ -50,27 +50,31 @@ export default {
   data() {
     return {
       techs: [
-        { name: 'adobeXD', description: 'UI and UX debates and designs start with the wireframing. They`re at the base of everything I do.', image: 'adobexd_logo.svg' },
-        { name: 'vue', description: 'I`m a Vue.js man. I build SPAs with it, complete with page routing and state. The apps are then deployed as PWAs.', image: 'vue_logo.svg' },
-        { name: 'amplify', description: 'I leverage the power of AWS Amplify to create NoSQL databases and Lambda functions to run the apps.', image: 'amplify_logo.png' }
-      ]
+        {
+          name: 'adobeXD',
+          description:
+            'UI and UX debates and designs start with the wireframing. They`re at the base of everything I do.',
+          image: 'adobexd_logo.svg',
+        },
+        {
+          name: 'vue',
+          description:
+            'I`m a Vue.js man. I build SPAs with it, complete with page routing and state. The apps are then deployed as PWAs.',
+          image: 'vue_logo.svg',
+        },
+        {
+          name: 'amplify',
+          description:
+            'I leverage the power of AWS Amplify to create NoSQL databases and Lambda functions to run the apps.',
+          image: 'amplify_logo.png',
+        },
+      ],
     }
   },
 }
 </script>
 <style scoped>
 .wrapper {
-  height: calc(100vh - 64px);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 350px;
-  /* margin-bottom: 200px; */
-}
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    margin-top: 100px;
-  }
+  margin-top: 100px;
 }
 </style>

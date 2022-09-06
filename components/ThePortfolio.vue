@@ -29,13 +29,13 @@
     <div class="wrapper">
       <div>
         <p
-          data-aos="fade-down"
+          data-aos="fade-up"
           class="text-center text-h2 grey--text text--lighten-2"
         >
           portfolio
         </p>
         <p
-          data-aos="fade-down"
+          data-aos="fade-up"
           class="text-center font-italic text-h6 mb-12 grey--text text--lighten-2"
         >
           commercial apps
@@ -135,16 +135,6 @@ export default {
 
 <style scoped>
 .wrapper {
-  height: calc(100vh - 64px);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 600px;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    margin-top: 100px;
-  }
+  margin-top: 100px;
 }
 </style>

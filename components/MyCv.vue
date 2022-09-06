@@ -3,14 +3,8 @@
     <div class="wrapper">
       <div>
         <p
-          data-aos="fade-down"
-          class="
-            text-center text-h2
-            mb-12
-            grey--text
-            text--lighten-2
-            font-weight-light
-          "
+          data-aos="fade-up"
+          class="text-center text-h2 mb-12 grey--text text--lighten-2 font-weight-light"
         >
           curriculum vitae
         </p>
@@ -22,23 +16,12 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style scoped>
 .wrapper {
-  height: calc(100vh - 64px);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-top: 450px;
-  margin-bottom: 100px;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    margin-top: 100px;
-  }
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 </style>

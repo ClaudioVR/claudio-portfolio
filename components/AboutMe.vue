@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="inner-wrapper">
         <p
-          data-aos="fade-down"
+          data-aos="fade-in"
           class="text-center text-h2 mb-12 grey--text text--lighten-2"
         >
           about me
@@ -12,29 +12,23 @@
           <v-col
             cols="12"
             sm="3"
-            class="d-flex justify-center"
+            class="d-flex justify-center align-center"
             data-aos="fade-up"
           >
-            <!-- <img
-              data-aos="fade-up"
-              height="auto"
-              width="100%"
-              src="about-me.svg"
-              alt="Claudio"
-            /> -->
-            <v-avatar color="" size="300">
-              <img src="about-me.svg" alt="Claudio image" />
+            <v-avatar
+              data-aos="fade-right"
+              size="225"
+              @mouseover="hover = true"
+              @mouseout="hover = false"
+            >
+              <img src="/images/claudioAvatar.png" alt="Claudio image" />
             </v-avatar>
           </v-col>
           <v-col cols="12" sm="9" class="d-flex align-center">
             <div>
               <div
-                data-aos="fade-up"
-                class="
-                  text-center text-sm-left text-body-1
-                  font-weight-light
-                  text--grey text--darken-2
-                "
+                data-aos="fade-left"
+                class="text-center text-sm-left text-body-1 font-weight-light text--grey text--darken-2"
               >
                 <p>
                   I'm a creative frontend developer with an passion for UX
@@ -66,7 +60,10 @@
                   who places a great deal of importance on the user journey.
                 </p>
               </div>
-              <div class="mt-5 d-flex justify-center justify-sm-start">
+              <div
+                class="mt-5 d-flex justify-center justify-sm-start"
+                data-aos="fade-up"
+              >
                 <v-chip
                   class=""
                   color="blue"
@@ -104,20 +101,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.wrapper {
-  height: calc(100vh - 64px);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-top: 300px;
-}
-.inner-wrapper {
-  min-width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    margin-top: 0px;
-  }
-}
-</style>
+<style scoped></style>
