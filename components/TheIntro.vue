@@ -7,7 +7,7 @@
         </div>
         <div
           id="secondary-titles"
-          class="text-center mt-5 mt-sm-0 ml-sm-10 grey--text text--darken-3"
+          class="text-center mt-5 mt-sm-0 ml-sm-10 black--text"
         >
           <p class="mt-3 mb-0 text-h6">frontend developer</p>
           <p class="my-0">oslo, norway</p>
@@ -42,13 +42,13 @@ export default {
 .wrapper {
   height: calc(100vh);
   width: 100%;
-  /* margin-top: 64px; */
   margin-bottom: 100px;
 }
 
 .logo-wrapper {
-  height: 300px;
-  width: 500px;
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -62,6 +62,13 @@ export default {
   to {
     opacity: 1;
     transform: translateY(-50px);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .logo-wrapper {
+    height: 300px;
+    width: 500px;
   }
 }
 </style>
