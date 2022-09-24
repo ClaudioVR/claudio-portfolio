@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-center text-h2 mt-5 mb-8">Non commercial projects</p>
+    <p class="text-center text-h4 text-md-h2 mt-5 mb-8">Free time projects</p>
     <p
       class="font-weight-light my-0 text-center text-h6 grey--text text--darken-2"
     >
@@ -56,6 +56,15 @@ export default {
   data() {
     return {
       projects: [
+        {
+          name: 'Users.js',
+          image: 'nextJS',
+          description:
+            'A React application I built with Next.js. Using Axios for API calls to fetch data that is stored as local state, all with use of React hooks. ',
+          technologies: 'React, Next.js, MaterialUI',
+          url: 'https://brukere-next-js.netlify.app/',
+          repo: 'https://github.com/ClaudioVR/next-js-project',
+        },
         {
           name: 'Dr.Dropin',
           image: 'dr-dropin',
@@ -126,15 +135,6 @@ export default {
           technologies: 'Vue.js',
           url: 'https://vue-playgound.netlify.app/',
           repo: 'https://github.com/ClaudioVR/vue-playground',
-        },
-        {
-          name: 'Visit Bøler.com',
-          image: 'visit-boler',
-          description:
-            'A mock tourist office website for Bøler. An experiment in reproducing a page using nothing more than Matrialize and some vanilla CSS.',
-          technologies: 'CC3, Materialize CSS',
-          url: 'https://claudiovr.github.io/Visit-Boeler-dot-com/',
-          repo: 'https://github.com/ClaudioVR/Visit-Boeler-dot-com',
         },
         {
           name: 'JojoJayne.com',
